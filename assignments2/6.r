@@ -1,20 +1,14 @@
-# Given ages data
 ages <- c(79, 85, 50, 32, 20, 10, 8, 25, 80, 40, 52, 60, 75, 92, 98, 85, 78, 81, 53, 45)
 
-# Define the class intervals (breaks)
 breaks <- c(0, 20, 40, 60, 80, 100)
 
-# Create a frequency table (continuous frequency distribution)
 freq_table_continuous <- cut(ages, breaks, right = FALSE, include.lowest = TRUE)
 freq_distribution <- table(freq_table_continuous)
 
-# Print the frequency distribution table
 print(freq_distribution)
 
-# Calculate the relative frequencies (probabilities)
 probability_distribution_continuous <- prop.table(freq_distribution)
 
-# Print the probability distribution table
 print(probability_distribution_continuous)
 
 
